@@ -1,0 +1,32 @@
+
+p{
+          color: rgb(26, 221, 124);
+          font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+          font-size: 68px;
+          padding-left : 37% ;
+          padding-top: 20%;
+}
+.light{
+          position: relative;
+          z-index: 2;
+          cursor: pointer;
+}
+.light::before{
+          content: "";
+          position: absolute;
+          left: -2px;
+          top: -2px;
+          padding: 2px;
+          padding-left: 0;
+          padding-right: 0;
+          height: 100%;
+          width: 0;
+          background-color:#f05c57;
+          pointer-events: none;
+          transition: 250ms ease;
+          z-index: -1;
+}
+.light:hover::before{
+          width: 100%;
+          padding: 2px;
+}
